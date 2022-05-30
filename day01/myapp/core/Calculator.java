@@ -1,4 +1,5 @@
 // This is my first app
+// Change is the only constant
 package myapp.core;
 
 import java.io.Console;
