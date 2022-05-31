@@ -9,9 +9,9 @@ public class ShoppingCart {
 
         List<String> cart = new LinkedList<>();
         Console cons = System.console();
-        boolean stop = false;
         String input;
         int delIndex;
+        boolean stop = false;
 
         // Add test data
         cart.add("apple");
@@ -31,6 +31,19 @@ public class ShoppingCart {
 
             switch (cmd) {
                 case "add":
+                    for (int i = 1; i < terms.length; i++) {
+                        boolean found = false;
+                        for (int j = 0; j < cart.size(); j++) {
+                            if (terms[i].equals(cart.get(j))) {
+                                found = true;
+                                break;
+                            }
+                        }
+                        if (!found) {
+                            cart.add(terms[i]);
+                            System.out.printf("Added %s to cart\n", terms[i]);
+                        }
+                    }
                     break;
 
                 case "list":
@@ -49,8 +62,8 @@ public class ShoppingCart {
                     } else {
                         delIndex = Integer.parseInt(terms[1]) - 1;
                         if (delIndex < cart.size()) {
+                            System.out.printf("Deleted %s from cart\n", cart.get(delIndex));
                             cart.remove(delIndex);
-                            System.out.println("Deleted");
                         } else {
                             System.err.println("No such item");
                         }
@@ -58,11 +71,13 @@ public class ShoppingCart {
                     break;
 
                 case "end":
+                    stop = true;
                     break;
 
                 default:
             }
         }
 
+        System.out.println("Thank you for shopping with us");
     }
 }
