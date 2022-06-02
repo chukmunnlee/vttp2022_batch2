@@ -9,6 +9,7 @@ public class MainRemote {
         Computer myNotebook = new Computer();
 
         Controllable ctrl = new Honda();
+		  Controllable ctrlb = new String();
 
         RemoteControl rm = new RemoteControl(h);
         RemoteControl rmNotebook = new RemoteControl(myNotebook);
