@@ -69,6 +69,7 @@ public class Session {
 				case EXIT:
 					stop = true;
 					break;
+
 				default:
 					System.err.printf("Unknow input: %s\n", terms[0]);
 			}
