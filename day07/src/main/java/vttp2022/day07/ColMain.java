@@ -36,11 +36,11 @@ public class ColMain {
         System.out.println(intList);
 
         int sumOfMyList = myList.stream()
-            .filter(v -> 0 == (v % 2))
-            .map(v -> v + 1)
-            .reduce(0, (x, y) -> {
+            .filter(v -> 0 == (v % 2)) // stream
+            .map(v -> v + 1) // stream
+            .reduce(0, (acc, v) -> {
                 //System.out.printf("x: %d, y: %d\n", x, y);
-                return x + y;
+                return acc + v;
             });
 
         System.out.printf("sumOfMyList: %d\n", sumOfMyList);
