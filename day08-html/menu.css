@@ -1,0 +1,23 @@
+.menu>.menuitem {
+    margin-top: 20px;
+    display: inline;
+    font-size: 1.2em;
+}
+
+.menuitem {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: lightgrey;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
+.menuitem:hover {
+    background-color: pink;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
