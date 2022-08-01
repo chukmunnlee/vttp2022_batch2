@@ -23,8 +23,8 @@ public class AppConfig {
     @Value("${REDIS_PASSWORD}")
     private String redisPassword;
 
-    @Bean
-    public RedisTemplate<String, Object> initRedisTemplate() {
+    @Bean("redislab")
+    public RedisTemplate<String, String> initRedisTemplate() {
         // Configure the Redis database
         RedisStandaloneConfiguration redisConfig = new RedisStandaloneConfiguration();
         redisConfig.setHostName(redisHost);
@@ -32,8 +32,6 @@ public class AppConfig {
         redisConfig.setDatabase(redisDatabase);
         redisConfig.setUsername(redisUsername);
         redisConfig.setPassword(redisPassword);
-
-        System.out.printf("username: %s, password: %s\n", redisUsername, redisPassword);
 
         // Create an instance of the Jedis driver
         JedisClientConfiguration jedisConfig = JedisClientConfiguration.builder().build();
@@ -43,7 +41,7 @@ public class AppConfig {
         jedisFac.afterPropertiesSet();
 
         // Create RedisTemplate
-        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
+        RedisTemplate<String, String> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(jedisFac);
         // Explain tomorrow
         redisTemplate.setKeySerializer(new StringRedisSerializer());
