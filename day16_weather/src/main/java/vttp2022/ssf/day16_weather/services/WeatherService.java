@@ -6,21 +6,23 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.fasterxml.jackson.annotation.JsonValue;
-
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonReader;
 import vttp2022.ssf.day16_weather.models.Weather;
+import vttp2022.ssf.day16_weather.repositories.WeatherRepository;
 
 @Service
 public class WeatherService {
@@ -30,30 +32,53 @@ public class WeatherService {
     @Value("${API_KEY}")
     private String key;
 
+    @Autowired
+    private WeatherRepository weatherRepo;
+
     public List<Weather> getWeather(String city) {
 
-        // Create the url with query string
-        String url = UriComponentsBuilder.fromUriString(URL)
-            .queryParam("q", city)
-            .queryParam("appid", key)
-            .toUriString();
+        // Check if we have the weather cached
+        Optional<String> opt = weatherRepo.get(city);
+        String payload;
 
-        // Create the GET request, GET url
-        RequestEntity<Void> req = RequestEntity.get(url).build();
+        System.out.printf(">>> city: %s\n", city);
 
-        // Make the call to OpenWeatherMap
-        RestTemplate template = new RestTemplate();
-        ResponseEntity<String> resp = template.exchange(req, String.class);
+        // Check if the box is empty
+        if (opt.isEmpty()) {
 
-        // Check status code
-        if (resp.getStatusCodeValue() != 200) {
-            System.err.println("Error status code is not 200 ");
-            return Collections.emptyList();
+            System.out.println("Getting weather from OpenWeatherMap");
+
+            // Create the url with query string
+            String url = UriComponentsBuilder.fromUriString(URL)
+                    .queryParam("q", city)
+                    .queryParam("appid", key)
+                    .toUriString();
+
+            // Create the GET request, GET url
+            RequestEntity<Void> req = RequestEntity.get(url).build();
+
+            // Make the call to OpenWeatherMap
+            RestTemplate template = new RestTemplate();
+            ResponseEntity<String> resp;
+
+            try {
+                // Throws an exception if status code not in between 200 - 399
+                resp = template.exchange(req, String.class);
+            } catch (Exception ex) {
+                System.err.printf("Error: %s\n", ex.getMessage());
+                return Collections.emptyList();
+            }
+
+            // Get the payload and do something with it
+            payload = resp.getBody();
+            System.out.println("payload: " + payload);
+
+            weatherRepo.save(city, payload);
+        } else {
+            // Retrieve the value for the box
+            payload = opt.get();
+            System.out.printf(">>>> cache: %s\n", payload);
         }
-
-        // Get the payload and do something with it
-        String payload = resp.getBody();
-        System.out.println("payload: " + payload);
 
         // Convert payload to JsonObject
         // Convert the String to a Reader
@@ -71,5 +96,5 @@ public class WeatherService {
         }
         return list;
     }
-    
+
 }
