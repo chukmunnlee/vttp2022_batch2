@@ -2,6 +2,7 @@ package vttp2022.ssf.day16_weather.services;
 
 import java.io.Reader;
 import java.io.StringReader;
+import java.net.URLEncoder;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -48,32 +49,32 @@ public class WeatherService {
 
             System.out.println("Getting weather from OpenWeatherMap");
 
-            // Create the url with query string
-            String url = UriComponentsBuilder.fromUriString(URL)
-                    .queryParam("q", city)
+            try {
+                // Create the url with query string
+                String url = UriComponentsBuilder.fromUriString(URL)
+                    .queryParam("q", URLEncoder.encode(city, "UTF-8"))
                     .queryParam("appid", key)
                     .toUriString();
 
-            // Create the GET request, GET url
-            RequestEntity<Void> req = RequestEntity.get(url).build();
+                // Create the GET request, GET url
+                RequestEntity<Void> req = RequestEntity.get(url).build();
 
-            // Make the call to OpenWeatherMap
-            RestTemplate template = new RestTemplate();
-            ResponseEntity<String> resp;
+                // Make the call to OpenWeatherMap
+                RestTemplate template = new RestTemplate();
+                ResponseEntity<String> resp;
 
-            try {
                 // Throws an exception if status code not in between 200 - 399
                 resp = template.exchange(req, String.class);
+
+                // Get the payload and do something with it
+                payload = resp.getBody();
+                System.out.println("payload: " + payload);
+
+                weatherRepo.save(city, payload);
             } catch (Exception ex) {
                 System.err.printf("Error: %s\n", ex.getMessage());
                 return Collections.emptyList();
             }
-
-            // Get the payload and do something with it
-            payload = resp.getBody();
-            System.out.println("payload: " + payload);
-
-            weatherRepo.save(city, payload);
         } else {
             // Retrieve the value for the box
             payload = opt.get();
