@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Shopping Cart</title>
+		<style>
+			.cart {
+				width: 20vw;
+				border: 1px black solid;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h2><span data-th-text="${name}"></span>'s Shopping Cart</h2>
+
+		<table>
+			<tr>
+
+				<td class="cart">
+					<h3>Contents</h3>
+					<div>Apple</div>
+					<div>Orange</div>
+				</td>
+
+				<td>
+					<form method="POST" action="/cart">
+
+						<label for="item">Item:</label>
+						<input id="item" type="text" name="item" size="20" placeholder="Item to add" required>
+
+						<button type="submit">Add to Cart</button>
+					</form>
+				</td>
+
+			</tr>
+		</table>
+		
+	</body>
+</html>
