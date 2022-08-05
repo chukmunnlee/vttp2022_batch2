@@ -24,6 +24,8 @@ public class GreetingsController {
     public String getGreetings(Model model) {
         ValueOperations<String, String> ops = redisTemplate.opsForValue();
         Object greetings = ops.get("greetings");
+		  if (null == greetings)
+			  greetings = "Not set";
         model.addAttribute("hello", greetings.toString());
         return "index";
     }
