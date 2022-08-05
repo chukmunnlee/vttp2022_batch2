@@ -1,0 +1,39 @@
+set 1 "{\"id\":1, \"name\":\"Die Macher\", \"year\":1986, \"ranking\":223, \"users_rated\":4777, \"url\":\"https://www.boardgamegeek.com/boardgame/1/die-macher\", \"image\":\"https://cf.geekdo-images.com/micro/img/JFMB8ORpxWo-VfPrEePfMluBkGs=/fit-in/64x64/pic159509.jpg\"}"
+
+set 2 "{\"id\":2, \"name\":\"Dragonmaster\", \"year\":1981, \"ranking\":3095, \"users_rated\":523, \"url\":\"https://www.boardgamegeek.com/boardgame/2/dragonmaster\", \"image\":\"https://cf.geekdo-images.com/micro/img/GjYccOggc9GURTZwKLB3EsLh19A=/fit-in/64x64/pic4001505.jpg\"}" 
+
+set 3 "{\"id\":3, \"name\":\"Samurai\", \"year\":1998, \"ranking\":188, \"users_rated\":13455, \"url\":\"https://www.boardgamegeek.com/boardgame/3/samurai\", \"image\":\"https://cf.geekdo-images.com/micro/img/4XUy5QxQQfMHjx7pm2JpkJrTdDQ=/fit-in/64x64/pic3211873.jpg\"}" 
+
+set 4 "{\"id\":4, \"name\":\"Tal der K\u00f6nige\", \"year\":1992, \"ranking\":4033, \"users_rated\":324, \"url\":\"https://www.boardgamegeek.com/boardgame/4/tal-der-konige\", \"image\":\"https://cf.geekdo-images.com/micro/img/x2IMJSPByASB1OF2B3WzFMnMZ4c=/fit-in/64x64/pic285299.jpg\"}" 
+
+set 5 "{\"id\":5, \"name\":\"Acquire\", \"year\":1964, \"ranking\":224, \"users_rated\":16946, \"url\":\"https://www.boardgamegeek.com/boardgame/5/acquire\", \"image\":\"https://cf.geekdo-images.com/micro/img/SR4x4YjZk7UEc8HPUs8e55RhyqM=/fit-in/64x64/pic3299296.jpg\"}" 
+
+set 6 "{\"id\":6, \"name\":\"Mare Mediterraneum\", \"year\":1989, \"ranking\":8208, \"users_rated\":79, \"url\":\"https://www.boardgamegeek.com/boardgame/6/mare-mediterraneum\", \"image\":\"https://cf.geekdo-images.com/micro/img/ldvo1mbj_Kec_8tc8MUjE-zUddQ=/fit-in/64x64/pic28424.jpg\"}" 
+
+set 7 "{\"id\":7, \"name\":\"Cathedral\", \"year\":1978, \"ranking\":1630, \"users_rated\":3002, \"url\":\"https://www.boardgamegeek.com/boardgame/7/cathedral\", \"image\":\"https://cf.geekdo-images.com/micro/img/K7inVaEf-eZzuI7Cb7ws-jR4Xu8=/fit-in/64x64/pic181642.jpg\"}" 
+
+set 8 "{\"id\":8, \"name\":\"Lords of Creation\", \"year\":1993, \"ranking\":6927, \"users_rated\":190, \"url\":\"https://www.boardgamegeek.com/boardgame/8/lords-creation\", \"image\":\"https://cf.geekdo-images.com/micro/img/NG_cQx45VlPDT4lqK0SA4f3JLNU=/fit-in/64x64/pic374320.jpg\"}" 
+
+set 9 "{\"id\":9, \"name\":\"El Caballero\", \"year\":1998, \"ranking\":2212, \"users_rated\":1336, \"url\":\"https://www.boardgamegeek.com/boardgame/9/el-caballero\", \"image\":\"https://cf.geekdo-images.com/micro/img/nxTDdLh1ysDylDjXGG0up7u4Eqs=/fit-in/64x64/pic1731731.jpg\"}" 
+
+set 10 "{\"id\":10, \"name\":\"Elfenland\", \"year\":1998, \"ranking\":864, \"users_rated\":7383, \"url\":\"https://www.boardgamegeek.com/boardgame/10/elfenland\", \"image\":\"https://cf.geekdo-images.com/micro/img/BQiVfOs6UwBDBj117kWCQDZyGbE=/fit-in/64x64/pic1798136.jpg\"}" 
+
+set 11 "{\"id\":11, \"name\":\"Bohnanza\", \"year\":1997, \"ranking\":395, \"users_rated\":33647, \"url\":\"https://www.boardgamegeek.com/boardgame/11/bohnanza\", \"image\":\"https://cf.geekdo-images.com/micro/img/dp2WPKMWrHEtNAcCG9D77Phmr6I=/fit-in/64x64/pic69366.jpg\"}" 
+
+set 12 "{\"id\":12, \"name\":\"Ra\", \"year\":1999, \"ranking\":144, \"users_rated\":17433, \"url\":\"https://www.boardgamegeek.com/boardgame/12/ra\", \"image\":\"https://cf.geekdo-images.com/micro/img/dLCB1zVufOOwUH41u39hwZSunmE=/fit-in/64x64/pic3013552.jpg\"}" 
+
+set 13 "{\"id\":13, \"name\":\"Catan\", \"year\":1995, \"ranking\":321, \"users_rated\":84736, \"url\":\"https://www.boardgamegeek.com/boardgame/13/catan\", \"image\":\"https://cf.geekdo-images.com/micro/img/e0y6BognJpgqdsgn2mXP5AARp98=/fit-in/64x64/pic2419375.jpg\"}" 
+
+set 14 "{\"id\":14, \"name\":\"Basari\", \"year\":1998, \"ranking\":1535, \"users_rated\":1552, \"url\":\"https://www.boardgamegeek.com/boardgame/14/basari\", \"image\":\"https://cf.geekdo-images.com/micro/img/eWoRQwR-qsnHi6WdmSsBclCFYEY=/fit-in/64x64/pic48605.jpg\"}" 
+
+set 15 "{\"id\":15, \"name\":\"Cosmic Encounter\", \"year\":1977, \"ranking\":888, \"users_rated\":3761, \"url\":\"https://www.boardgamegeek.com/boardgame/15/cosmic-encounter\", \"image\":\"https://cf.geekdo-images.com/micro/img/7Ee6BKkMAdZor2K4MHPkJSGiBlY=/fit-in/64x64/pic428608.jpg\"}" 
+
+set 16 "{\"id\":16, \"name\":\"MarraCash\", \"year\":1996, \"ranking\":1933, \"users_rated\":911, \"url\":\"https://www.boardgamegeek.com/boardgame/16/marracash\", \"image\":\"https://cf.geekdo-images.com/micro/img/O-E5bXCMwhKeN1l0HMY9dFkfrhk=/fit-in/64x64/pic573942.jpg\"}" 
+
+set 17 "{\"id\":17, \"name\":\"Button Men\", \"year\":1999, \"ranking\":3247, \"users_rated\":774, \"url\":\"https://www.boardgamegeek.com/boardgame/17/button-men\", \"image\":\"https://cf.geekdo-images.com/micro/img/izViEVYqSG14P-7xgfOE8DicUss=/fit-in/64x64/pic59279.jpg\"}" 
+
+set 18 "{\"id\":18, \"name\":\"RoboRally\", \"year\":1994, \"ranking\":368, \"users_rated\":21191, \"url\":\"https://www.boardgamegeek.com/boardgame/18/roborally\", \"image\":\"https://cf.geekdo-images.com/micro/img/td1FQrF52K5lCT7M9BGa_Rvi8TU=/fit-in/64x64/pic1000553.jpg\"}" 
+
+set 19 "{\"id\":19, \"name\":\"Wacky Wacky West\", \"year\":1991, \"ranking\":2429, \"users_rated\":1589, \"url\":\"https://www.boardgamegeek.com/boardgame/19/wacky-wacky-west\", \"image\":\"https://cf.geekdo-images.com/micro/img/P8I7aUUzar4pe3moDKMd-PewBxo=/fit-in/64x64/pic786075.jpg\"}" 
+
+set 20 "{\"id\":20, \"name\":\"Full Metal Plan\u00e8te\", \"year\":1988, \"ranking\":1679, \"users_rated\":663, \"url\":\"https://www.boardgamegeek.com/boardgame/20/full-metal-planete\", \"image\":\"https://cf.geekdo-images.com/micro/img/EC70pJzsiYE_doq4wWlovmLmhJk=/fit-in/64x64/pic451783.jpg\"}" 
