@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Book Search</h1>
+
+        <form method="GET" action="/search">
+            <table>
+                <tr>
+                    <td>Book title:</td>
+                    <td>
+                        <input type="text" name="bookName" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number of results:</td>
+                    <td>
+                        <select name="resultCount">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </td>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit">Search</button>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+
+        </form>
+        
+    </body>
+</html>

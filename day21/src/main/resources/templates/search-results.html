@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Your search string '<code data-th-text="${bookName}"></code>'</h1>
+
+        <h2>Number of books returned <span data-th-text="${resultCount}"></span></h2>
+
+        <h4>Search <a href="/">again</a></h4>
+
+        <h3 data-th-if="${!hasResult}">Your search produces no results</h3>
+
+        <table data-th-if="${hasResult}">
+            <tr data-th-each="b: ${books}">
+                <td>
+                    <img data-th-src="${b.image}" alt="">
+                </td>
+                <td>
+                    <h4 data-th-text="${b.title}"></h4>
+                    <p data-th-text="${b.description}"></p>
+                    <div>Rating: <i data-th-text="${b.rating}"></i></div>
+                </td>
+            </tr>
+
+        </table>
+        
+    </body>
+</html>
