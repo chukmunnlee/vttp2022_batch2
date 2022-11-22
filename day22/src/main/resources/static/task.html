@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+    </head>
+    <body>
+
+        <h1>Add Task</h1>
+
+        <form method="POST" action="/task">
+
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Task name:</td>
+                    <td><input type="text" name="taskName"></td>
+                </tr>
+                <tr>
+                    <td>Priority:</td>
+                    <td>
+                        <select name="priority">
+                            <option value="LOW">LOW</option>
+                            <option value="MED" selected>MED</option>
+                            <option value="HIGH">HIGH</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Completion:</td>
+                    <td><input type="date" name="completion"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Create Task</button></td>
+                </tr>
+            </table>
+
+        </form>
+        
+    </body>
+</html>
