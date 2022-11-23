@@ -1,0 +1,29 @@
+.center-it {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 95vh;
+}
+
+.comp-size {
+    height: 2em;
+    font-size: 1.5em;
+}
+
+.round-borders {
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: lightgrey;
+    margin-left: .5vw;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+.btn:hover {
+    background-color: pink;
+}

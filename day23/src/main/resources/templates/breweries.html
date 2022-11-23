@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breweries</title>
+    </head>
+    <body>
+
+        <h1>The following breweries brew <span></span></h1>
+
+        <div data-th-each="b: ${breweries}" 
+                style="border: 1px black solid; border-radius: 8px; padding: 8px; margin-bottom: 2px;">
+            <span data-th-text="${b.name}"></span>
+        </div>
+        
+    </body>
+</html>
