@@ -1,16 +1,17 @@
 package vttp.paf.day24.repositories;
 
-import java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import vttp.paf.day24.models.LineItem;
 import vttp.paf.day24.models.PurchaseOrder;
 
 import static vttp.paf.day24.repositories.Queries.*;
 
+@Repository
 public class LineItemRepository {
 
     @Autowired
@@ -21,7 +22,7 @@ public class LineItemRepository {
     }
 
     public void addLineItems(List<LineItem> lineItems, String orderId) {
-        // ???
+        /* 
         List<Object[]> data = new LinkedList<>();
         for (LineItem li: lineItems) {
             Object[] l = new Object[3];
@@ -30,9 +31,10 @@ public class LineItemRepository {
             l[2] = orderId;
             data.add(l);
         }
+        */
 
-        // Stream
-        data = lineItems.stream()
+        // Stream - alternative to iteration
+        List<Object[]> data = lineItems.stream()
             .map(li -> {
                 Object[] l = new Object[3];
                 l[0] = li.getDescription();

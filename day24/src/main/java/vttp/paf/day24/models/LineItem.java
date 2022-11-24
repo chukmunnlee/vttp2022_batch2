@@ -5,6 +5,12 @@ public class LineItem {
     private String description;
     private Integer quantity;
 
+    public LineItem() { }
+    public LineItem(String description, Integer quantity) { 
+        this.description = description;
+        this.quantity = quantity;
+    }
+
     public Integer getItemId() { return itemId; }
     public void setItemId(Integer itemId) { this.itemId = itemId; }
 
