@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Shopping Cart</h1>
+
+        <form method="POST" action="/cart">
+
+            <table>
+                <tr>
+                    <td>Item:</td>
+                    <td><input type="text" name="item"></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input type="number" name="quantity" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Add</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>Contents</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-th-each="li: ${lineItems}">
+                    <td><span data-th-text="${li.description}"></span></td>
+                    <td><span data-th-text="${li.quantity}"></span></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <form method="POST" action="/checkout">
+                            <button type="submit">Checkout</button>
+                        </form>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </body>
+</html>

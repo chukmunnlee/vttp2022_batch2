@@ -27,6 +27,7 @@ public class Day24Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) {
 
+		/* 
 		PurchaseOrder po = new PurchaseOrder();
 		po.setName("fred");
 		po.setOrderDate(new Date());
@@ -40,7 +41,7 @@ public class Day24Application implements CommandLineRunner {
 		} catch (OrderException ex) {
 			System.out.println(">>>>> " + ex.getMessage());
 		}
-
+		*/
 	}
 
 }

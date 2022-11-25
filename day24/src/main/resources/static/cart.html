@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Shopping Cart</h1>
+
+        <form method="POST" action="/cart">
+
+            <table>
+                <tr>
+                    <td>Item:</td>
+                    <td><input type="text" name="item"></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input type="number" name="quantity" min="1" value="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Add</button></td>
+                </tr>
+            </table>
+
+        </form>
+        
+    </body>
+</html>
