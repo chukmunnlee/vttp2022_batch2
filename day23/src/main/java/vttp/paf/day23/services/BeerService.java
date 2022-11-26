@@ -18,11 +18,11 @@ public class BeerService {
     @Autowired
     private StylesRepository stylesRepo;
 
-	 @Autowired
-	 private BreweryCache breweryCache;
-
     @Autowired
     private BreweryRepository breweryRepo;
+
+	 @Autowired
+	 private BreweryCache breweryCache;
 
     public List<BeerStyle> getBeerStyles() {
         return stylesRepo.getStyles();
