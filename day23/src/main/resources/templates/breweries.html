@@ -8,9 +8,14 @@
     </head>
     <body>
 
-        <h1>The following breweries brew <span></span></h1>
+		 <h1>Breweries </h1>
 
-        <div data-th-each="b: ${breweries}" 
+		 <h3><a href="/">Back</a></h3>
+
+		 <div data-th-if="${#lists.size(breweries) <= 0}">
+			  <h2>No breweries has that beer</h2>
+		  </div>
+		  <div data-th-each="b: ${breweries}" data-th-if="${#lists.size(breweries) > 0}" 
                 style="border: 1px black solid; border-radius: 8px; padding: 8px; margin-bottom: 2px;">
             <span data-th-text="${b.name}"></span>
         </div>
