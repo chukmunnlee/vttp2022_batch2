@@ -9,6 +9,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
+import vttp2022.paf.day26.models.TVShow;
+
 @Repository
 public class TVShowRepository {
 
@@ -16,6 +18,30 @@ public class TVShowRepository {
 
     @Autowired
     private MongoTemplate mongoTemplate;
+
+    /*
+     * db.tvshows.distinct('genres') 
+     */
+    public List<String> getGenres() {
+        return mongoTemplate.findDistinct(new Query(), "genres", C_TV_SHOWS, String.class);
+    }
+
+    /*
+     * db.tvshows.find({
+     *      genres: { $in: [ 'some_genre' ] }
+     * })
+     * .limit(m).skip(n)
+     */
+	 public List<TVShow> getTVShowByGenre(String genre) {
+		 Criteria c = Criteria.where("genres")
+			 .in(genre);
+		 Query q = Query.query(c);
+
+		 return mongoTemplate.find(q, Document.class, C_TV_SHOWS)
+			.stream()
+			.map(d -> TVShow.create(d))
+			.toList();
+	 }
 
     /*
      * db.tvshows.find({ language: "English" })

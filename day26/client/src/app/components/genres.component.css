@@ -1,0 +1,12 @@
+.hover-over {
+	font-size: 1.2em;
+	margin: 5px;
+	padding: 5px;
+	transition-duration: 200ms;
+	transition-property: background-color;
+	transition-timing-function: linear;
+
+}
+.hover-over:hover {
+	background-color: lightgrey;
+}

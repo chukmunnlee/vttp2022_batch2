@@ -19,7 +19,13 @@ public class Day26Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) {
 
+		/*
+		List<String> genres = tvShowRepo.getGenres();
+		for (String g: genres)
+			System.out.printf(">>> :%s\n", g);
+
 		//List<Document> results = tvShowRepo.findTVShowByLanguage("English");
+		/*
 		List<Document> results = tvShowRepo.findTVShowsByRating(6.5f, 1990);
 		for (Document d: results) {
 			Document ratingDoc = d.get("rating", Document.class);
@@ -29,6 +35,9 @@ public class Day26Application implements CommandLineRunner {
 		}
 
 		System.exit(0);
+
+		*/
+
 	}
 
 	public static void main(String[] args) {

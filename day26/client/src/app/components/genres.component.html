@@ -1,0 +1,6 @@
+
+<h2>TV Show Genres</h2>
+
+<div *ngFor="let g of genres" class="hover-over" [routerLink]="['/tvshow', g]">
+	{{ g }}
+</div>

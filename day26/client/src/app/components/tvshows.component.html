@@ -1,0 +1,17 @@
+<h2>List of shows for {{ genre }}</h2>
+
+<div *ngFor="let tv of tvshows" class="box-it">
+	<table>
+		<tr>
+			<td>
+				<img [src]="tv.image" class="fixed-width">
+			</td>
+			<td>
+				<h3>Title: {{ tv.name }}</h3>
+				<h3>Summary:</h3>
+				<p>{{ tv.summary }}</p>
+				<h3>Rating: <i>{{ tv.rating }}</i></h3>
+			</td>
+		</tr>
+	</table>
+</div>
