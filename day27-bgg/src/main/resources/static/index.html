@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Comment Search</h1>
+
+        <form method="GET" action="/search">
+            <table>
+                <tr>
+                    <td>Search:</td>
+                    <td> <input type="text" name="q" size="30" required> </td>
+                </tr>
+                <tr>
+                    <td>Score:</td>
+                    <td>
+                        <select name="score">
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option value="0.5">0.4</option>
+                            <option value="0.5" selected>0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Search</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+    </body>
+</html>

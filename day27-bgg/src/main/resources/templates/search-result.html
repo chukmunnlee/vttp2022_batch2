@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            td { padding: 10px; }
+        </style>
+    </head>
+    <body>
+
+        <h1>Search Result</h1>
+
+        <h4>
+            Query: <span data-th-text="${q}"></span>
+            Score: <span data-th-text="${score}"></span>
+        </h4>
+
+        <table border="1">
+            <tr data-th-each="r: ${results}">
+                <td>
+                    <div>User: <span data-th-text="${r.user}"></span></div>
+                    <div>Rating: <i data-th-text="${r.rating}"></i></div>
+                    <div>Score: <i data-th-text="${r.score}"></i></div>
+                    <div data-th-text="${r.text}"></div>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
