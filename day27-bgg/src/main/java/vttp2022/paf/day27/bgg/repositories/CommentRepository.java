@@ -42,8 +42,9 @@ public class CommentRepository {
          * .skip(n)
          */
         TextCriteria tc = TextCriteria.forDefaultLanguage()
-            .matchingAny(includes.toArray(new String[0]))
-            .notMatchingAny(excludes.toArray(new String[0])) ;
+            // convert the include array to a string array
+            .matchingAny(includes.toArray(new String[includes.size()]))
+            .notMatchingAny(excludes.toArray(new String[excludes.size()])) ;
 
         TextQuery tq = (TextQuery)TextQuery.queryText(tc)
             .includeScore("score")
