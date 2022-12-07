@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boardgame Search</title>
+        <style>
+            .center-it {
+                width: 95vw;
+                height: 95vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="center-it">
+            <form method="GET" action="/search">
+                <input type="text" name="q" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
