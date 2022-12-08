@@ -1,5 +1,6 @@
 package vttp2022.paf.day29.models;
 
+import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
 
@@ -30,6 +31,27 @@ public class SuperHero {
     public String toString() {
         return "SuperHero {id=%d, name=%s, description=%s, image=%s, details=%s}"
                 .formatted(id, name, description, image, details);
+    }
+
+    public JsonObject toJson() {
+        return Json.createObjectBuilder()
+            .add("id", id)
+            .add("name", name)
+            .add("description", description)
+            .add("image", image)
+            .add("details", details)
+            .build();
+    }
+
+    public static SuperHero fromCache(JsonObject doc) {
+
+        final SuperHero sh = new SuperHero();
+        sh.setId(doc.getInt("id"));
+        sh.setName(doc.getString("name"));
+        sh.setDescription(doc.getString("description"));
+        sh.setImage(doc.getString("image"));
+        sh.setDetails(doc.getString("details"));
+        return sh;
     }
 
     public static SuperHero create(JsonObject doc) {

@@ -19,10 +19,9 @@ public class Day29Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) {
 
-		List<SuperHero> result =  marvelSvc.search("doctor", 5);
-		System.out.println(result);
-
-		System.exit(0);
+		// List<SuperHero> result =  marvelSvc.search("doctor", 5);
+		// System.out.println(result);
+		// System.exit(0);
 	}
 
 	public static void main(String[] args) {

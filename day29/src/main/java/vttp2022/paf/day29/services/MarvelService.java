@@ -87,7 +87,12 @@ public class MarvelService {
         for (Integer i = 0; i < data.size(); i++)
             superHeros.add(SuperHero.create(data.getJsonObject(i)));
 
-        return superHeros;
+        //return superHeros;
+
+        return data.stream()
+            .map(v -> (JsonObject)v)
+            .map(jo -> SuperHero.create(jo))
+            .toList();
     }
     
 }
