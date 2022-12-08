@@ -37,7 +37,8 @@ public class SuperHero {
 
         sh.setId(doc.getInt("id"));
         sh.setName(doc.getString("name"));
-        sh.setDescription(doc.getString("description", "No description"));
+        sh.setDescription(doc.getString("description").trim().length() > 0? 
+                doc.getString("description"): "No description");
 
         JsonObject img = doc.getJsonObject("thumbnail");
         sh.setImage("%s.%s".formatted(img.getString("path"), img.getString("extension")));
