@@ -19,4 +19,16 @@ public class Queries {
 				line_item(item, quantity, order_id)
 				values (?, ?, ?)
 		""";
+
+	public static final String SQL_INSERT_ORDER_STATUS = """
+			insert into
+				order_status(order_id, delivery_id, status)
+				values (?, ?, ?)
+		""";
+
+	public static final String SQL_GET_ORDER_STATUS_BY_NAME = """
+			select * 
+				from order_status_count 
+				where name = ?
+		""";
 }

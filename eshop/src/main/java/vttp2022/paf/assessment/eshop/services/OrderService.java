@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import vttp2022.paf.assessment.eshop.models.Customer;
 import vttp2022.paf.assessment.eshop.models.Order;
+import vttp2022.paf.assessment.eshop.models.OrderStatusCount;
 import vttp2022.paf.assessment.eshop.respositories.OrderRepository;
 
 @Service
@@ -29,6 +30,11 @@ public class OrderService {
 		} catch (Exception ex) {
 			throw new OrderException(ex.getMessage(), ex);
 		}
+	}
+
+	public OrderStatusCount getOrderStatusCount(String name) {
+		OrderStatusCount orderStatusCount = orderRepo.getOrdersCount(name);
+		return orderStatusCount;
 	}
 
 }

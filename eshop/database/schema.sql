@@ -46,6 +46,15 @@ create table order_status (
 		references purchase_order(order_id)
 );
 
+create view order_status_count as
+	select c.name, os.status, count(os.status) as status_count
+		from customer c 
+		join purchase_order po
+		on c.name = po.name
+		join order_status os 
+		on po.order_id = os.order_id
+		group by c.name, os.status;
+
 insert into customer(name, address, email) values
 	('fred', '201 Cobblestone Lane', 'fredflintstone@bedrock.com'),
 	('sherlock', '221B Baker Street, London', 'sherlock@consultingdetective.org'),

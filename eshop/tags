@@ -93,7 +93,7 @@
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
 !_TAG_PARSER_VERSION!XML	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/opt/tmp/vttp2022/vttp2022_batch2/eshop/	//
+!_TAG_PROC_CWD	/home/tmp/vttp2022/vttp2022_batch2/eshop/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -242,6 +242,7 @@ CF	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 CF	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	method:dm.t.anonymousObject6e3306093f05.vy.cD.setStyle
 CP	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud.SC
 CP	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud.SC
+CREATED_BY	src/main/java/vttp2022/paf/assessment/eshop/services/WarehouseService.java	/^	public static final String CREATED_BY = "fred";$/;"	f	class:WarehouseService
 C_	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	variable:anonymousObjectd1308f4b9005
 C_	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	variable:anonymousObject6e3306099005
 Ca	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	method:dm.t.anonymousObjectd1308f4b3f05.vy.cD.setStyle
@@ -688,8 +689,14 @@ Or	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 Or	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:ah.Su.Iu.up.pl
 Order	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^public class Order {$/;"	c
 OrderController	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^public class OrderController {$/;"	c
+OrderException	src/main/java/vttp2022/paf/assessment/eshop/services/OrderException.java	/^	public OrderException() { $/;"	m	class:OrderException
+OrderException	src/main/java/vttp2022/paf/assessment/eshop/services/OrderException.java	/^	public OrderException(String message, Throwable throwable) {$/;"	m	class:OrderException
+OrderException	src/main/java/vttp2022/paf/assessment/eshop/services/OrderException.java	/^public class OrderException extends Exception {$/;"	c
 OrderRepository	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderRepository.java	/^public class OrderRepository {$/;"	c
+OrderService	src/main/java/vttp2022/paf/assessment/eshop/services/OrderService.java	/^public class OrderService {$/;"	c
 OrderStatus	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^public class OrderStatus {$/;"	c
+OrderStatusCount	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^public class OrderStatusCount {$/;"	c
+OrderStatusRepository	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderStatusRepository.java	/^public class OrderStatusRepository {$/;"	c
 Os	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:ah.Su.Iu.up.xs.xl.QM.Vl
 Os	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:ah.Su.Iu.up.xs.xl.QM.Vl
 Ou	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:ah.Su.Iu
@@ -770,6 +777,7 @@ Qp	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 Qp	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:ah.Su.Iu.up.pl.Or
 Qu	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:ah.Su.Iu.$e
 Qu	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:ah.Su.Iu.$e
+Queries	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^public class Queries {$/;"	c
 R	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	setter:ah.Su.Iu.up.xs.xl.QM.Vl.zo.context
 R	src/main/resources/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	C
 R	src/main/resources/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	c	class:P
@@ -822,6 +830,11 @@ SE	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 SE	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	method:dm.t.anonymousObject6e3306093f05.vy.by.insert
 SP	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud.Fi
 SP	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud.Fi
+SQL_FIND_CUSTOMER_BY_NAME	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^	public static final String SQL_FIND_CUSTOMER_BY_NAME = """$/;"	f	class:Queries
+SQL_GET_ORDER_STATUS_BY_NAME	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^	public static final String SQL_GET_ORDER_STATUS_BY_NAME = """$/;"	f	class:Queries
+SQL_INSERT_LINEITEM	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^	public static final String SQL_INSERT_LINEITEM = """$/;"	f	class:Queries
+SQL_INSERT_ORDER	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^	public static final String SQL_INSERT_ORDER = """$/;"	f	class:Queries
+SQL_INSERT_ORDER_STATUS	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^	public static final String SQL_INSERT_ORDER_STATUS = """$/;"	f	class:Queries
 Scroll	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:dm.t.anonymousObjectd1308f4b3f05.vy.cD.setStyle.VN
 Scroll	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:dm.t.anonymousObject6e3306093f05.vy.cD.setStyle.VN
 Sg	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:ah.Su.Iu.up.xs.xl.QM.Vl
@@ -894,6 +907,7 @@ UO	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 UO	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ti
 UP	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:e1
 UP	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:e1
+URL	src/main/java/vttp2022/paf/assessment/eshop/services/WarehouseService.java	/^	public static final String URL = "http:\/\/paf.chuklee.com\/dispatch";$/;"	f	class:WarehouseService
 UT	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:dm.t.anonymousObjectd1308f4b3f05.vy.dv
 UT	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:dm.t.anonymousObject6e3306093f05.vy.dv
 Ua	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud
@@ -924,6 +938,7 @@ Up	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackCh
 Up	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:dm.t.anonymousObject6e3306093f05.vy.cD.setStyle.VN
 Ut	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:ah
 Ut	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:ah
+Utils	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^public class Utils {$/;"	c
 VC	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud
 VC	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud
 VI	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	function:dm.t
@@ -2310,8 +2325,10 @@ createEmbeddedView	src/main/resources/static/main.5b589088f2c50942.js	/^"use str
 createEmbeddedView	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.by
 createEmbeddedView	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.YA
 createEmbeddedView	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.by
+createError	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static JsonObject createError(String message) {$/;"	m	class:Utils
 createHtmlDocument	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.ed
 createHtmlDocument	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.ed
+createOrder	src/main/java/vttp2022/paf/assessment/eshop/services/OrderService.java	/^	public void createOrder(Order order, Customer customer) throws OrderException {$/;"	m	class:OrderService
 createOrder	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.Hi
 createOrder	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.Hi
 createQueryParams	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.BC
@@ -2340,6 +2357,7 @@ currentQueryIndex	src/main/resources/static/main.5b589088f2c50942.js	/^"use stri
 currentQueryIndex	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:ah.Su.Iu.Dh.t
 currentTNode	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:ah.Su.Iu.Dh.t
 currentTNode	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:ah.Su.Iu.Dh.t
+custRepo	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^	private CustomerRepository custRepo;$/;"	f	class:OrderController	file:
 customer	database/schema.sql	/^create table customer ($/;"	t
 cv	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	class:dm.t.anonymousObjectd1308f4b3f05.vy.dv.UT
 cv	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	class:dm.t.anonymousObject6e3306093f05.vy.dv.UT
@@ -2481,6 +2499,7 @@ disabled	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.web
 dispatch	src/main/java/vttp2022/paf/assessment/eshop/services/WarehouseService.java	/^	public OrderStatus dispatch(Order order) {$/;"	m	class:WarehouseService
 dispatchEvent	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.ed
 dispatchEvent	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.ed
+dispatched	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	private Integer dispatched = 0;$/;"	f	class:OrderStatusCount	file:
 distributionUrl	.mvn/wrapper/maven-wrapper.properties	/^distributionUrl=https:\/\/repo.maven.apache.org\/maven2\/org\/apache\/maven\/apache-maven\/3.8.6/;"	k
 dm	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
 dm	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
@@ -2860,21 +2879,27 @@ getDefaultDocument	src/main/resources/static/main.5b589088f2c50942.js	/^"use str
 getDefaultDocument	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.ed
 getDeliveryId	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public String getDeliveryId() { return this.deliveryId; }$/;"	m	class:Order
 getDeliveryId	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	public String getDeliveryId() { return this.deliveryId; }$/;"	m	class:OrderStatus
+getDispatched	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public int getDispatched() { return this.dispatched; }$/;"	m	class:OrderStatusCount
 getEmail	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^	public String getEmail() { return this.email; }$/;"	m	class:Customer
 getEmail	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public String getEmail() { return this.email; }$/;"	m	class:Order
 getGlobalEventTarget	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.ed
 getGlobalEventTarget	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.ed
 getGlobalObjects	src/main/resources/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	f	class:i
-getGlobalObjects	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	f	class:i
+getGlobalObjects	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	f	constant:i
 getItem	src/main/java/vttp2022/paf/assessment/eshop/models/LineItem.java	/^	public String getItem() { return this.item; }$/;"	m	class:LineItem
 getLineItems	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public List<LineItem> getLineItems() { return this.lineItems; }$/;"	m	class:Order
 getName	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^	public String getName() { return this.name; }$/;"	m	class:Customer
 getName	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public String getName() { return this.name; }$/;"	m	class:Order
+getName	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public String getName() { return this.name; }$/;"	m	class:OrderStatusCount
 getOrderDate	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public Date getOrderDate() { return this.orderDate; }$/;"	m	class:Order
 getOrderId	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public String getOrderId() { return this.orderId; }$/;"	m	class:Order
 getOrderId	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	public String getOrderId() { return this.orderId; }$/;"	m	class:OrderStatus
+getOrderStatus	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^	public ResponseEntity<String> getOrderStatus(@PathVariable String name) {$/;"	m	class:OrderController
+getOrderStatusCount	src/main/java/vttp2022/paf/assessment/eshop/services/OrderService.java	/^	public OrderStatusCount getOrderStatusCount(String name) {$/;"	m	class:OrderService
 getOrderSummary	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.Hi
 getOrderSummary	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.Hi
+getOrdersCount	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderRepository.java	/^	public OrderStatusCount getOrdersCount(String name) {$/;"	m	class:OrderRepository
+getPending	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public int getPending() { return this.pending; }$/;"	m	class:OrderStatusCount
 getQuantity	src/main/java/vttp2022/paf/assessment/eshop/models/LineItem.java	/^	public Integer getQuantity() { return this.quantity; }$/;"	m	class:LineItem
 getRawValue	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:anonymousObjectd1308f4b9005.Aa.clearValidators.K_
 getRawValue	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:anonymousObject6e3306099005.Aa.clearValidators.K_
@@ -3075,6 +3100,8 @@ insert	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 insert	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.by
 insertBefore	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.cD
 insertBefore	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.cD
+insertOrder	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderRepository.java	/^	public void insertOrder(Order order) {$/;"	m	class:OrderRepository
+insertOrderStatus	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderStatusRepository.java	/^	public void insertOrderStatus(OrderStatus orderStatus) {$/;"	m	class:OrderStatusRepository
 intercept	src/main/resources/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	m	class:anonymousObject86672d760105.583.anonymousFunction86672d760200.v
 intercept	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	m	class:anonymousObject90978af40105.583.anonymousFunction90978af40200.v
 invalid	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	G	class:anonymousObjectd1308f4b9005.Aa
@@ -3146,6 +3173,9 @@ jT	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackCh
 ja	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
 ja	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
 java.version	pom.xml	/^		<java.version>17<\/java.version>$/;"	p
+jdbcTemplate	src/main/java/vttp2022/paf/assessment/eshop/respositories/CustomerRepository.java	/^	private JdbcTemplate jdbcTemplate;$/;"	f	class:CustomerRepository	file:
+jdbcTemplate	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderRepository.java	/^	private JdbcTemplate jdbcTemplate;$/;"	f	class:OrderRepository	file:
+jdbcTemplate	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderStatusRepository.java	/^	private JdbcTemplate jdbcTemplate;$/;"	f	class:OrderStatusRepository	file:
 jh	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	class:ah.Su.Iu.Tr
 jh	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	class:ah.Su.Iu.Tr
 ji	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.BC
@@ -3411,6 +3441,7 @@ name	database/schema.sql	/^	name varchar(32) not null,$/;"	E	table:customer
 name	database/schema.sql	/^	name varchar(32) not null,$/;"	E	table:purchase_order
 name	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^	private String name;$/;"	f	class:Customer	file:
 name	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	private String name;$/;"	f	class:Order	file:
+name	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	private String name;$/;"	f	class:OrderStatusCount	file:
 name	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:Ud.Hi.isInvalid.anonymousObjectd1308f4b12105
 name	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:anonymousObjectd1308f4b4a05
 name	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:anonymousObjectd1308f4b4c05
@@ -3643,6 +3674,9 @@ order	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpac
 orderDate	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	private Date orderDate = new Date();$/;"	f	class:Order	file:
 orderId	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	private String orderId;$/;"	f	class:Order	file:
 orderId	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	private String orderId;$/;"	f	class:OrderStatus	file:
+orderRepo	src/main/java/vttp2022/paf/assessment/eshop/services/OrderService.java	/^	private OrderRepository orderRepo;$/;"	f	class:OrderService	file:
+orderStatusRepo	src/main/java/vttp2022/paf/assessment/eshop/services/WarehouseService.java	/^	private OrderStatusRepository orderStatusRepo;$/;"	f	class:WarehouseService	file:
+orderSvc	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^	private OrderService orderSvc;$/;"	f	class:OrderController	file:
 order_date	database/schema.sql	/^	order_date date,$/;"	E	table:purchase_order
 order_id	database/schema.sql	/^	order_id char(8) not null,$/;"	E	table:line_item
 order_id	database/schema.sql	/^	order_id char(8) not null,$/;"	E	table:order_status
@@ -3742,6 +3776,7 @@ pattern	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.
 pattern	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.cD.setStyle.gi
 pd	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
 pd	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
+pending	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	private Integer pending = 0;$/;"	f	class:OrderStatusCount	file:
 pending	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	G	class:anonymousObjectd1308f4b9005.Aa
 pending	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	G	class:anonymousObject6e3306099005.Aa
 pf	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	method:anonymousObjectd1308f4b0105.407
@@ -3764,6 +3799,7 @@ pn	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 pn	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	setter:ah.Su.Iu.up.xs.xl.QM.Vl.zo.context
 positionalParamSegments	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:Ud.rf
 positionalParamSegments	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	p	variable:Ud.rf
+postOrder	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^	public ResponseEntity<String> postOrder(@RequestBody String payload) {$/;"	m	class:OrderController
 pp	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:ah.Su.Iu.up.nl
 pp	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:ah.Su.Iu.up.nl
 pr	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
@@ -4250,6 +4286,7 @@ setControl	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.w
 setCustomer	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setCustomer(Customer customer) {$/;"	m	class:Order
 setDeliveryId	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setDeliveryId(String deliveryId) { this.deliveryId = deliveryId; }$/;"	m	class:Order
 setDeliveryId	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	public void setDeliveryId(String deliveryId) { this.deliveryId = deliveryId; }$/;"	m	class:OrderStatus
+setDispatched	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public void setDispatched(int dispatched) { this.dispatched = dispatched; }$/;"	m	class:OrderStatusCount
 setEmail	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^	public void setEmail(String email) { this.email = email; }$/;"	m	class:Customer
 setEmail	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setEmail(String email) { this.email = email; }$/;"	m	class:Order
 setHistoryScrollRestoration	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.Bx
@@ -4260,11 +4297,13 @@ setItem	src/main/java/vttp2022/paf/assessment/eshop/models/LineItem.java	/^	publ
 setLineItems	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setLineItems(List<LineItem> lineItems) { this.lineItems = lineItems; }$/;"	m	class:Order
 setName	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^	public void setName(String name) { this.name = name; }$/;"	m	class:Customer
 setName	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setName(String name) { this.name = name; }$/;"	m	class:Order
+setName	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public void setName(String name) { this.name = name; }$/;"	m	class:OrderStatusCount
 setOffset	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObjectd1308f4b3f05.vy.Bx
 setOffset	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:dm.t.anonymousObject6e3306093f05.vy.Bx
 setOrderDate	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setOrderDate(Date orderDate) { this.orderDate = orderDate; }$/;"	m	class:Order
 setOrderId	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setOrderId(String orderId) { this.orderId = orderId; }$/;"	m	class:Order
 setOrderId	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	public void setOrderId(String orderId) { this.orderId = orderId; }$/;"	m	class:OrderStatus
+setPending	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public void setPending(int pending) { this.pending = pending; }$/;"	m	class:OrderStatusCount
 setQuantity	src/main/java/vttp2022/paf/assessment/eshop/models/LineItem.java	/^	public void setQuantity(Integer quantity) { this.quantity = quantity; }$/;"	m	class:LineItem
 setStatus	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^	public void setStatus(String status) { this.status = status; }$/;"	m	class:Order
 setStatus	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^	public void setStatus(String status) { this.status = status; }$/;"	m	class:OrderStatus
@@ -4438,10 +4477,20 @@ tn	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 tn	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f
 to	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:dm.t.anonymousObjectd1308f4b3f05.vy
 to	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:dm.t.anonymousObject6e3306093f05.vy
+toCustomer	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static Customer toCustomer(SqlRowSet rs) {$/;"	m	class:Utils
 toJSON	src/main/resources/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	m	class:anonymousObject86672d760105.583.anonymousFunction86672d760200.m
 toJSON	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	m	class:anonymousObject90978af40105.583.anonymousFunction90978af40200.m
+toJson	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static JsonObject toJson(Order order, String createdBy) {$/;"	m	class:Utils
+toJson	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static JsonObject toJson(OrderStatus orderStatus) {$/;"	m	class:Utils
+toJson	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static JsonObject toJson(OrderStatusCount orderStatusCount) {$/;"	m	class:Utils
+toJson	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static JsonObject toJson(String str) {$/;"	m	class:Utils
+toLineItem	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static LineItem toLineItem(JsonObject json) {$/;"	m	class:Utils
+toOrder	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static Order toOrder(JsonObject json) {$/;"	m	class:Utils
+toOrderStatus	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static OrderStatus toOrderStatus(JsonObject json) {$/;"	m	class:Utils
+toOrderStatusCount	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^	public static OrderStatusCount toOrderStatusCount(SqlRowSet rs) {$/;"	m	class:Utils
 toPromise	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:anonymousObjectd1308f4b0105.407.gw.e
 toPromise	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:anonymousObject6e3306090105.407.gw.e
+toString	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^	public String toString() {$/;"	m	class:OrderStatusCount
 toString	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	variable:e
 toString	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.CC
 toString	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	m	class:Ud.DP
@@ -4790,14 +4839,20 @@ vp	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpa
 vp	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:ah.Su.Iu.up
 vttp2022.paf.assessment	pom.xml	/^	<groupId>vttp2022.paf.assessment<\/groupId>$/;"	g
 vttp2022.paf.assessment.eshop	src/main/java/vttp2022/paf/assessment/eshop/EshopApplication.java	/^package vttp2022.paf.assessment.eshop;$/;"	p
+vttp2022.paf.assessment.eshop	src/main/java/vttp2022/paf/assessment/eshop/Utils.java	/^package vttp2022.paf.assessment.eshop;$/;"	p
 vttp2022.paf.assessment.eshop	src/test/java/vttp2022/paf/assessment/eshop/EshopApplicationTests.java	/^package vttp2022.paf.assessment.eshop;$/;"	p
 vttp2022.paf.assessment.eshop.controllers	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^package vttp2022.paf.assessment.eshop.controllers;$/;"	p
 vttp2022.paf.assessment.eshop.models	src/main/java/vttp2022/paf/assessment/eshop/models/Customer.java	/^package vttp2022.paf.assessment.eshop.models;$/;"	p
 vttp2022.paf.assessment.eshop.models	src/main/java/vttp2022/paf/assessment/eshop/models/LineItem.java	/^package vttp2022.paf.assessment.eshop.models;$/;"	p
 vttp2022.paf.assessment.eshop.models	src/main/java/vttp2022/paf/assessment/eshop/models/Order.java	/^package vttp2022.paf.assessment.eshop.models;$/;"	p
 vttp2022.paf.assessment.eshop.models	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatus.java	/^package vttp2022.paf.assessment.eshop.models;$/;"	p
+vttp2022.paf.assessment.eshop.models	src/main/java/vttp2022/paf/assessment/eshop/models/OrderStatusCount.java	/^package vttp2022.paf.assessment.eshop.models;$/;"	p
 vttp2022.paf.assessment.eshop.respositories	src/main/java/vttp2022/paf/assessment/eshop/respositories/CustomerRepository.java	/^package vttp2022.paf.assessment.eshop.respositories;$/;"	p
 vttp2022.paf.assessment.eshop.respositories	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderRepository.java	/^package vttp2022.paf.assessment.eshop.respositories;$/;"	p
+vttp2022.paf.assessment.eshop.respositories	src/main/java/vttp2022/paf/assessment/eshop/respositories/OrderStatusRepository.java	/^package vttp2022.paf.assessment.eshop.respositories;$/;"	p
+vttp2022.paf.assessment.eshop.respositories	src/main/java/vttp2022/paf/assessment/eshop/respositories/Queries.java	/^package vttp2022.paf.assessment.eshop.respositories;$/;"	p
+vttp2022.paf.assessment.eshop.services	src/main/java/vttp2022/paf/assessment/eshop/services/OrderException.java	/^package vttp2022.paf.assessment.eshop.services;$/;"	p
+vttp2022.paf.assessment.eshop.services	src/main/java/vttp2022/paf/assessment/eshop/services/OrderService.java	/^package vttp2022.paf.assessment.eshop.services;$/;"	p
 vttp2022.paf.assessment.eshop.services	src/main/java/vttp2022/paf/assessment/eshop/services/WarehouseService.java	/^package vttp2022.paf.assessment.eshop.services;$/;"	p
 vw	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:Ud.kC
 vw	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:Ud.kC
@@ -4811,6 +4866,7 @@ w	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpa
 w	target/classes/static/polyfills.2f476ae5aba6c940.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[429],{583:()=>/;"	v	function:P.anonymousFunction90978af43400
 wC	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud
 wC	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	c	class:Ud
+warehouseSvc	src/main/java/vttp2022/paf/assessment/eshop/controllers/OrderController.java	/^	private WarehouseService warehouseSvc;$/;"	f	class:OrderController	file:
 wc	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:dm.t.anonymousObjectd1308f4b3f05.vy
 wc	target/classes/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	function:dm.t.anonymousObject6e3306093f05.vy
 wd	src/main/resources/static/main.5b589088f2c50942.js	/^"use strict";(self.webpackChunkstorefront=self.webpackChunkstorefront||[]).push([[179],{407:()=>/;"	f	method:anonymousObjectd1308f4b9005.Aa.clearValidators
