@@ -1,0 +1,14 @@
+<h1>Displaying {{ imageURL }} {{ width }}</h1>
+
+<div>
+  <img class="thumbnail"
+    [src]="imageURL" [style.width]="width + 'vw'"
+    (click)="imageClicked()">
+<div>
+<div>
+  <button type="button" (click)="resize(-2)">-</button>
+  <button type="button" (click)="resize(2)">+</button>
+</div>
+
+
+

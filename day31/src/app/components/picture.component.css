@@ -1,0 +1,11 @@
+p {
+  font-size: 2em;
+  color: grey;
+}
+
+.thumbnail {
+  width: 30vw;
+  height: auto;
+  border-radius: 10px;
+  border: grey 2px solid;
+}
