@@ -1,0 +1,7 @@
+<h2>Inventories</h2>
+
+<div *ngFor="let i of inventories" class="inventory"
+    (click)="selected(i.imageUrl)">
+  <img src="/assets/fruits/{{i.imageUrl}}.png" width="50">
+  <span>{{i.name }}</span>
+</div>
