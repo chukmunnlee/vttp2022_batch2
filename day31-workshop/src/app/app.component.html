@@ -3,5 +3,5 @@
 </div>
 <div class="side-by-side">
   <app-inventory (onSelection)="selected($event)"></app-inventory>
-  <app-cart></app-cart>
+  <app-cart [cart]="content"></app-cart>
 </div>

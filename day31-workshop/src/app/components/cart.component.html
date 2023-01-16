@@ -1,1 +1,11 @@
-<p>cart works!</p>
+<h2>My Cart</h2>
+
+<div *ngIf="cart.length <= 0">
+  <h2>Your cart is empty</h2>
+</div>
+
+<div *ngIf="cart.length > 0">
+  <div *ngFor="let i of cart">
+    <h2>{{ i.name }}</h2>
+  </div>
+</div>

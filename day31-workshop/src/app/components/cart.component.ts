@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Inventory } from '../models';
 
 @Component({
   selector: 'app-cart',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
+
+  @Input()
+  cart: Inventory[] = []
 
 }
