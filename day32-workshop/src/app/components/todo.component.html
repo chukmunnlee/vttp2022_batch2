@@ -1,0 +1,59 @@
+<form [formGroup]="todoForm" (ngSubmit)="processForm()">
+
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" size="20" placeholder="Name" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" size="20" placeholder="Email" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div class="apart">
+          <button type="submit">Save</button>
+          <button type="button" (click)="addTask()">Add</button>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table *ngIf="taskArray.length > 0">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Priority</th>
+        <th>Due Date</th>
+      </tr>
+    </thead>
+    <tbody formArrayName="tasks">
+      <tr *ngFor="let t of taskArray.controls; let i = index" [formGroupName]="i">
+        <td>
+          <input type="text" placeholder="Task" size="30" formControlName="task">
+        </td>
+        <td>
+          <select formControlName="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </td>
+        <td>
+          <input type="date" placeholder="Due date" formControlName="dueDate">
+        </td>
+        <td>
+          <button type="button" (click)="deleteTask(i)">X</button>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</form>
