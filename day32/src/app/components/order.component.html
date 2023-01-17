@@ -1,0 +1,76 @@
+<h1>Order ({{ name | uppercase }})</h1>
+<h2><code>{{ order | json }}</code></h2>
+
+<form [formGroup]="form" (ngSubmit)="process()">
+  <table>
+    <tr>
+      <td>Name: </td>
+      <td>
+        <input type="text" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" formControlName="email"
+            [ngClass]="{'error': form.dirty && form.get('email')?.invalid }" >
+      </td>
+    </tr>
+    <tr>
+      <td>Rush:</td>
+      <td>
+        <input type="checkbox" formControlName="rush">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div> valid: {{ form.valid }}, invalid: {{ form.invalid }} </div>
+        <div> pristine: {{ form.pristine }}, dirty: {{ form.dirty }} </div>
+        <div> email: {{ form.get('email')?.valid }} </div>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="button" (click)="clearForm()">Clear</button>
+        <button type="button" (click)="addItem()">Add Item</button>
+        <button type="submit" [disabled]="form.invalid">
+          Process
+        </button>
+      </td>
+    </tr>
+  </table>
+
+  <div *ngIf="lineItems.length <= 0">
+    <h2>Your cart is empty</h2>
+  </div>
+
+  <table *ngIf="lineItems.length > 0">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody formArrayName="lineItems">
+      <!--
+      <tr *ngFor="let li of lineItems.controls" [formGroup]="li">
+      -->
+      <tr *ngFor="let li of lineItems.controls; let idx = index"
+          [formGroupName]="idx">
+        <td>
+          <input type="text" placeholder="Item" size="30"
+              formControlName="item">
+        </td>
+        <td>
+          <input type="number" placeholder="Minimum order is 1"
+              formControlName="quantity">
+        </td>
+        <td>
+          <button type="button" (click)="deleteItem(idx)">X</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
