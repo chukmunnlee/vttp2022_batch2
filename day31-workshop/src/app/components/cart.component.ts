@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-import { Inventory } from '../models';
+import { Component, Input, Output } from '@angular/core';
+import { Subject } from 'rxjs';
+import { CustomerSelection, Inventory } from '../models';
 
 @Component({
   selector: 'app-cart',
@@ -9,6 +10,14 @@ import { Inventory } from '../models';
 export class CartComponent {
 
   @Input()
-  cart: Inventory[] = []
+  cart: CustomerSelection[] = []
+
+  @Output()
+  onDelete = new Subject<number>()
+
+  deleteItem(i: number) {
+    console.info(`To delete: ${i}`)
+    this.onDelete.next(i);
+  }
 
 }

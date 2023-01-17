@@ -1,7 +1,7 @@
 import { Component, Output } from '@angular/core';
 import { Subject } from 'rxjs';
 import { INVENTORIES } from '../constant';
-import { Inventory } from '../models';
+import { CustomerSelection, Inventory } from '../models';
 
 @Component({
   selector: 'app-inventory',
@@ -11,12 +11,22 @@ import { Inventory } from '../models';
 export class InventoryComponent {
 
   @Output()
-  onSelection = new Subject<string>()
+  onSelection = new Subject<CustomerSelection>()
+
+  quantity = 0
 
   inventories: Inventory[] = INVENTORIES
 
-  selected(token: string) {
-    this.onSelection.next(token)
+  selected(name: string) {
+    const selection = {
+      name,
+      quantity: this.quantity
+    } as CustomerSelection
+    this.onSelection.next(selection)
+  }
+
+  addTo(i: number) {
+    this.quantity += i
   }
 
 }

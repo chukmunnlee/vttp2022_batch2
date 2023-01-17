@@ -5,7 +5,8 @@
 </div>
 
 <div *ngIf="cart.length > 0">
-  <div *ngFor="let i of cart">
-    <h2>{{ i.name }}</h2>
+  <div *ngFor="let i of cart; let idx = index">
+    <h2>{{ i.name }} @ {{ i.quantity }}</h2>
+    <button type="button" (click)="deleteItem(idx)">Delete</button>
   </div>
 </div>
