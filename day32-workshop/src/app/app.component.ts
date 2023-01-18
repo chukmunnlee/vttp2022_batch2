@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   todo: Todo|null = null
 
   ngOnInit(): void {
-    const jsonString = sessionStorage.getItem('todo')
+    const jsonString = localStorage.getItem('todo')
     if (!!jsonString)
       this.todo = JSON.parse(jsonString)
 
@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   processNewTodo(todo: Todo) {
     const jsonString = JSON.stringify(todo)
     console.info('>> saving todo to localstorage')
-    sessionStorage.setItem('todo', jsonString)
+    localStorage.setItem('todo', jsonString)
+    //sessionStorage.setItem('todo', jsonString)
   }
 }

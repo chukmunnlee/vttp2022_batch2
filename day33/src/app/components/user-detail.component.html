@@ -1,0 +1,34 @@
+<form [formGroup]="form" (ngSubmit)="processForm()">
+
+  <table border="1">
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" size="30" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" size="30" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td>Comments:</td>
+      <td>
+        <textarea cols="30" rows="4" formControlName="comments">
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <!--
+        <button type="submit">Save</button>
+        -->
+        <ng-content></ng-content>
+      </td>
+    </tr>
+  </table>
+
+</form>
