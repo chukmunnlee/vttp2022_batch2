@@ -38,6 +38,7 @@ export class UserComponent implements OnInit {
     return this.fb.group({
       name: this.fb.control<string>('', [ Validators.required, Validators.minLength(3)] ),
       email: this.fb.control<string>('', [ Validators.required, Validators.email] ),
+      phone: this.fb.control<string>('', [ Validators.required, Validators.minLength(8) ] ),
       dob: this.fb.control<Date>(new Date(), [ Validators.required ] ),
     })
   }

@@ -9,7 +9,7 @@
       <mat-icon>delete</mat-icon> Clear
     </button>
     <button type="button" mat-raised-button color="primary"
-        (click)="share()" [disabled]="false">
+        (click)="share()" [disabled]="!canShare">
       <mat-icon>share</mat-icon> Share
     </button>
   </div>

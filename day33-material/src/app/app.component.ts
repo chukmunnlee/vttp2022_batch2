@@ -13,10 +13,13 @@ export class AppComponent implements OnInit, AfterViewInit {
   userComponent!: UserComponent
 
   users: User[] = []
+  canShare = false
 
   constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.canShare = false;
+  }
 
   ngAfterViewInit(): void {
   }
