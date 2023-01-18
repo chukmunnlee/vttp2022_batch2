@@ -1,35 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { UserComponent } from './components/user.component';
+import { User } from './models';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
-  form!: FormGroup
+  @ViewChild(UserComponent)
+  userComponent!: UserComponent
 
-  constructor(private fb: FormBuilder) {}
+  users: User[] = []
 
-  ngOnInit(): void {
-    this.form = this.createForm()
+  constructor() {}
+
+  ngOnInit(): void { }
+
+  ngAfterViewInit(): void {
   }
 
-  processForm() {
-    console.info('>> form: ', this.form.value)
+  newUser(user: User) {
+    this.users = [ ...this.users, user ]
   }
 
   clearForm() {
-    this.form = this.createForm()
+    this.userComponent.clearForm()
   }
 
-  private createForm(): FormGroup {
-    return this.fb.group({
-      name: this.fb.control<string>('', [ Validators.required, Validators.minLength(3)] ),
-      email: this.fb.control<string>('', [ Validators.required, Validators.email] ),
-      dob: this.fb.control<Date>(new Date(), [ Validators.required ] ),
-    })
+  share() {
+    console.info('>>>> user: ', this.userComponent.value())
   }
 
 }

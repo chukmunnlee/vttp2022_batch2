@@ -1,0 +1,27 @@
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput placeholder="Your name" formControlName="name">
+    <mat-icon matSuffix>face</mat-icon>
+    <mat-hint align="end">Your official name</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="Your email" formControlName="email">
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-hint align="end">Your email</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="dob">
+    <mat-hint align="end">MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <ng-content>  </ng-content>
+
+</form>
