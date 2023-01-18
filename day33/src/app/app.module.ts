@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UserDetailComponent } from './components/user-detail.component';
+import { FriendsListComponent } from './components/friends-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    FriendsListComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule

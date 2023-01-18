@@ -9,6 +9,10 @@ import { UserDetail } from './models';
 })
 export class AppComponent implements OnInit, AfterViewInit {
 
+  users: UserDetail[] = []
+
+  newName!: string
+
   //@ViewChild('userDetail')
   @ViewChild(UserDetailComponent)
   userDetail!: UserDetailComponent
@@ -26,6 +30,14 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   process(userDetail: UserDetail) {
     console.info('>>>> appcomponent: ', userDetail)
+    this.newName = userDetail.name
+    this.users = [ ...this.users, userDetail ]
+
+    // this.users.push(userDetail)
+    // const u: UserDetail[] = []
+    // for (let n of this.users)
+    //   u.push(n)
+    // this.users = u
   }
 
   deleteUser() {

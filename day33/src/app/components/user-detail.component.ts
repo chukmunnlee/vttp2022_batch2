@@ -29,6 +29,7 @@ export class UserDetailComponent implements OnInit {
     const userDetail: UserDetail = this.form.value as UserDetail
     console.info('user detail: ', userDetail)
     this.onUserDetail.next(userDetail);
+    this.form = this.createForm()
   }
 
   private createForm(): FormGroup {

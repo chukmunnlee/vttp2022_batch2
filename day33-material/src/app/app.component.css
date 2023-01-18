@@ -1,0 +1,16 @@
+.thumbnail {
+  height: 7vh;
+  width: auto;
+  margin-right: 3vw;
+}
+
+.form-field {
+  width: 100vw;
+  margin-top: 1.5vw;
+}
+
+.button-bar {
+  display: flex;
+  margin-top: 3vh;
+  justify-content: space-around;
+}

@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <img src="/assets/bender.png" class="thumbnail">
+  <span>My First Material Application</span>
+</mat-toolbar>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput placeholder="Your name" formControlName="name">
+    <mat-icon matSuffix>face</mat-icon>
+    <mat-hint align="end">Your official name</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="Your email" formControlName="email">
+    <mat-icon matSuffix>email</mat-icon>
+    <mat-hint align="end">Your email</mat-hint>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="dob">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div class="button-bar">
+    <button type="button" mat-raised-button color="warn" (click)="clearForm()">
+      <mat-icon>delete</mat-icon> Clear
+    </button>
+    <button type="submit" mat-raised-button color="primary">
+      <mat-icon>save</mat-icon> Save
+    </button>
+
+  </div>
+</form>
