@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { UserComponent } from './components/user.component';
+import { NgNavigatorShareService } from 'ng-navigator-share'
 import { User } from './models';
 
 @Component({
@@ -15,10 +16,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   users: User[] = []
   canShare = false
 
-  constructor() {}
+  constructor(private webshare: NgNavigatorShareService) {}
 
   ngOnInit(): void {
-    this.canShare = false;
+    this.canShare = this.webshare.canShare()
+    console.info('can share: ', this.canShare)
   }
 
   ngAfterViewInit(): void {
@@ -33,7 +35,18 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   share() {
-    console.info('>>>> user: ', this.userComponent.value())
+    const user = this.userComponent.value()
+    console.info('>>>> user: ', user)
+    this.webshare.share({
+      title: user.name,
+      text: `Email: ${user.email}, Phone: ${user.phone}`
+    })
+    .then(result => {
+      console.info('>>> share result: ', result)
+    })
+    .catch(err => {
+      console.error('>>> share error: ', err)
+    })
   }
 
 }
