@@ -1,0 +1,12 @@
+.delivery {
+  padding: 2px;
+  margin: 2px;
+  border: 1px grey solid;
+  border-radius: 3px;
+}
+
+.space-around {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}

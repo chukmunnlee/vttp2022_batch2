@@ -1,0 +1,98 @@
+<h2>Cart</h2>
+<div>
+  <form [formGroup]="form" (ngSubmit)="processForm()">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td>
+          <input type="text" placeholder="Name" size="30" formControlName="name">
+        </td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td>
+          <input type="text" placeholder="Address" size="30" formControlName="address">
+        </td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td>
+          <input type="email" placeholder="Email" size="30" formControlName="email">
+        </td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td>
+          <input type="tel" placeholder="Phone" size="30" formControlName="phone">
+        </td>
+      </tr>
+      <tr>
+        <td>Express:</td>
+        <td>
+          <input type="checkbox" formControlName="express">
+        </td>
+      </tr>
+      <tr>
+        <td>Delivery:</td>
+        <td>
+          <span class="delivery">
+            <code>0900 - 1100</code>
+            <input type="radio" name="delivery" value="A" formControlName="delivery">
+          </span>
+          <span class="delivery">
+            <code>1100 - 1500</code>
+            <input type="radio" name="delivery" value="B" formControlName="delivery">
+          </span>
+          <span class="delivery">
+            <code>1500 - 1900</code>
+            <input type="radio" name="delivery" value="C" formControlName="delivery">
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <div class="space-around">
+            <button type="submit">Checkout</button>
+            <button type="button" (click)="addLineItem()">Add</button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+	 <div *ngIf="lineItems.length <= 0">
+		 <h2>Your cart is empty</h2>
+	 </div>
+
+	 <div *ngIf="lineItems.length > 0">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+          </tr>
+        </thead>
+        <tbody formArrayName="lineItems">
+          <tr *ngFor="let li of lineItems.controls; let i = index" [formGroupName]="i">
+            <td>
+              <input type="text" size="20" placeholder="Item" formControlName="item">
+            </td>
+            <td>
+              <input type="number" size="10" placeholder="Quantity" min="1" formControlName="quantity">
+            </td>
+            <td>
+            <input type="number" size="10" placeholder="Price" min="0.1" step=".1" formControlName="unitPrice">
+            </td>
+            <td>
+              <button type="button" (click)="removeLineItem(i)">X</button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </form>
+</div>

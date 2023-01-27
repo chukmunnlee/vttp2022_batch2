@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <td>
+      <app-cart (onNewOrder)="processNewOrder($event)"></app-cart>
+    </td>
+    <td>
+      <app-order [order]="order" [name]="customerName"></app-order>
+    </td>
+  </tr>
+</table>
