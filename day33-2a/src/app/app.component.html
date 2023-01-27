@@ -1,3 +1,4 @@
 <h1>Todo</h1>
 
-<app-todo></app-todo>
+<app-todo [todo]="data" (onNewTodo)="processTodo($event)">
+</app-todo>
