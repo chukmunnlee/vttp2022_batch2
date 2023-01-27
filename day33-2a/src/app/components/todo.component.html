@@ -1,0 +1,66 @@
+<form [formGroup]="todoForm" (ngSubmit)="processForm()">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" placeholder="Name" size="30" formControlName="name">
+        <div *ngIf="todoForm.get('name')?.invalid && todoForm.get('name')?.dirty">
+          Please enter your name
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" placeholder="Email" size="30" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="button" (click)="clearForm()">Clear</button>
+        <button type="submit" [disabled]="invalid()">
+          Save
+        </button>
+        <button type="button" (click)="addTask()">Add TODO</button>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <div>invalid: {{ todoForm.invalid }}, valid: {{ todoForm.valid }}</div>
+        <div>pristine: {{ todoForm.pristine }}, dirty: {{ todoForm.dirty }}</div>
+      </td>
+    </tr>
+  </table>
+
+  <table *ngIf="taskArray.controls.length > 0">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody formArrayName="tasks">
+      <!--
+        <tr *ngFor="let t of taskArray.controls; let i = index" [formGroupName]="i">
+      -->
+      <tr *ngFor="let t of taskArray.controls; let i = index" [formGroup]="t">
+        <td>
+          <input type="text" size="30" placeholder="Task" formControlName="task">
+        </td>
+        <td>
+          <select formControlName="priority">
+            <option value="low">Low</option>
+            <option value="med" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </td>
+        <td>
+          <button type="button" (click)="removeTask(i)">X</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</form>
