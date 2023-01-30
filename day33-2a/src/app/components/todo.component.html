@@ -19,10 +19,8 @@
       <td></td>
       <td>
         <button type="button" (click)="clearForm()">Clear</button>
-        <button type="submit" [disabled]="invalid()">
-          Save
-        </button>
         <button type="button" (click)="addTask()">Add TODO</button>
+        <ng-content></ng-content>
       </td>
     </tr>
     <tr>

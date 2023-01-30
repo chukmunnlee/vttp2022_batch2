@@ -41,6 +41,10 @@ export class TodoComponent implements OnInit {
     this.taskArray.removeAt(i)
   }
 
+  value(): Todo {
+    return this.todoForm.value as Todo
+  }
+
   invalid(): boolean {
     return this.todoForm.invalid || this.taskArray.length <= 0
   }
@@ -68,7 +72,7 @@ export class TodoComponent implements OnInit {
 
     //this.taskArray = this.createTasks( this.todo?.tasks? this.todo.tasks: [])
     if (this.todo?.tasks)
-      this.taskArray = this.createTasks(this.todo.tasks)
+      this.taskArray = this.createTasks(todo?.tasks)
     else
       this.taskArray = this.createTasks([])
 

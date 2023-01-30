@@ -1,0 +1,25 @@
+<h1>httpbin.org</h1>
+
+<h2>{{ data | json }}</h2>
+
+<form [formGroup]="form" (ngSubmit)="processForm()">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" size="30" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" size="30" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button type="submit">GET</button></td>
+    </tr>
+  </table>
+
+</form>
