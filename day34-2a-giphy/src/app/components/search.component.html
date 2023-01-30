@@ -1,0 +1,16 @@
+
+<form [formGroup]="searchForm" (ngSubmit)="processForm()">
+  <div>
+    <input type="text" size="20" placeholder="Search text" formControlName="text">
+    <select formControlName="count">
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+    </select>
+    <button type="submit" [disabled]="searchForm.invalid">
+      Search
+    </button>
+  </div>
+</form>
