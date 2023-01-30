@@ -5,6 +5,12 @@
 <form [formGroup]="form" (ngSubmit)="processForm()">
   <table>
     <tr>
+      <td>UserId:</td>
+      <td>
+        <input type="text" size="30" formControlName="userId">
+      </td>
+    </tr>
+    <tr>
       <td>Name:</td>
       <td>
         <input type="text" size="30" formControlName="name">
@@ -18,7 +24,11 @@
     </tr>
     <tr>
       <td></td>
-      <td><button type="submit">GET</button></td>
+      <td>
+        <button type="button" (click)="doPost()">POST</button>
+        <button type="button" (click)="doPostAsForm()">POST as Form</button>
+        <button type="submit">GET</button>
+      </td>
     </tr>
   </table>
 

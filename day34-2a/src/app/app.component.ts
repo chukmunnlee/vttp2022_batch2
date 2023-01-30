@@ -20,9 +20,34 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
+      userId: this.fb.control(''),
       name: this.fb.control(''),
       email: this.fb.control(''),
     })
+  }
+
+  doPostAsForm() {
+    const formdata: UserData = this.form.value
+    this.httpBinSvc.doPostAsForm(formdata)
+      .then(result => {
+        console.info('result: ', formdata)
+        this.data = result
+      })
+      .catch(err => {
+        console.error('>>> error:', err)
+      })
+  }
+
+  doPost() {
+    const formdata: UserData = this.form.value
+    this.httpBinSvc.doPost(formdata)
+      .then(result => {
+        console.info('result: ', formdata)
+        this.data = result
+      })
+      .catch(err => {
+        console.error('>>> error:', err)
+      })
   }
 
   processForm() {
