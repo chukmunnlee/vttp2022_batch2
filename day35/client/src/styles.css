@@ -5,7 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .fill-row {
   margin-top: 1vh;
-  width: 98vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -14,5 +14,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   margin-top: -3vh;
   display: flex;
   justify-content: end;
-  width: 98vw;
+  width: 100vw;
+}
+
+.logo {
+  width: 10vw;
+  height: auto;
+  margin-right: 9px;
 }
