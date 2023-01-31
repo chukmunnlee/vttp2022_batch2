@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SearchComponent } from './components/search.component';
 import { BGGService } from './bgg.service';
-import { DisplayComponent } from './componets/display.component';
+import { DisplayComponent } from './components/display.component';
 
 @NgModule({
   declarations: [

@@ -1,44 +1,34 @@
-import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { SearchComponent } from './components/search.component';
-import { DisplayComponent } from './componets/display.component';
+import { DisplayComponent } from './components/display.component';
 import { Game } from './models';
+import { BGGService } from './bgg.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit, OnDestroy {
+export class AppComponent implements AfterViewInit, OnInit, OnDestroy {
 
-  @ViewChild(SearchComponent)
-  searchComp!: SearchComponent
+  searchTerms = ""
+  sub$!: Subscription
 
-  @ViewChild(DisplayComponent)
-  displayComp!: DisplayComponent
+  constructor(private bggSvc: BGGService) {}
 
-  games: Game[] = []
-
-  onResults$!: Subscription
-
-  constructor() {}
-
-  ngAfterViewInit(): void {
-    // manually subscribe to the onResults event - @Output
-    this.onResults$ = this.searchComp.onResults.subscribe(
-      (games: Game[]) => {
-        console.info('>>>> in subscription')
-        // manually assign the new value to the attribute - @Input()
-        this.displayComp.games = games
+  ngOnInit(): void {
+    this.sub$ = this.bggSvc.onSearchQuery.subscribe(
+      (name: string) => {
+        this.searchTerms = name
       }
     )
   }
 
   ngOnDestroy(): void {
-      this.onResults$.unsubscribe()
+    this.sub$.unsubscribe()
   }
 
-  onResults(games: Game[]) {
-    this.games = games
+  ngAfterViewInit(): void {
   }
 }
