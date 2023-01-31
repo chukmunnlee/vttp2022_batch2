@@ -1,0 +1,31 @@
+<h2>Contact</h2>
+
+<form [formGroup]="contactForm" (ngSubmit)="processContact()">
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <input type="text" size="30" placeholder="Name" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td>
+        <input type="tel" size="30" placeholder="Phone" formControlName="phone">
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <input type="email" size="30" placeholder="Email" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button type="submit">Add</button>
+      </td>
+    </tr>
+  </table>
+
+</form>
