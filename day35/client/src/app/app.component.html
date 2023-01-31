@@ -3,4 +3,6 @@
   <span>Boardgame Search</span>
 </mat-toolbar>
 
-<app-search></app-search>
+<app-search (onResults)="onResults($event)"></app-search>
+
+<app-display [games]="games"></app-display>

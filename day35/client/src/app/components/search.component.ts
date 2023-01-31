@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Subject } from 'rxjs';
+import { BGGService } from '../bgg.service';
+import { Game } from '../models';
 
 @Component({
   selector: 'app-search',
@@ -8,9 +11,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class SearchComponent implements OnInit {
 
+  @Output()
+  onResults = new Subject<Game[]>
+
   searchForm!: FormGroup
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private bggSvc: BGGService) { }
 
   ngOnInit(): void {
     this.searchForm = this.createForm()
@@ -19,6 +25,15 @@ export class SearchComponent implements OnInit {
   doSearch() {
     const name = this.searchForm.get('name')?.value
     console.info('>>>> name: ', name)
+    this.bggSvc.searchGameByName(name)
+      .then(games => {
+        console.info('>>> games: ', games)
+        this.onResults.next(games)
+        this.searchForm.reset()
+      })
+      .catch(error => {
+        console.error('>>> error: ', error)
+      })
   }
 
   private createForm(): FormGroup {
