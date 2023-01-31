@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fill-row {
+  margin-top: 1vh;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+}
+
+.justify-right {
+  margin-top: -3vh;
+  display: flex;
+  justify-content: end;
+  width: 98vw;
+}

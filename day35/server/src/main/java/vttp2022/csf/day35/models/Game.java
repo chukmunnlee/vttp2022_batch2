@@ -1,5 +1,10 @@
 package vttp2022.csf.day35.models;
 
+import org.springframework.jdbc.support.rowset.SqlRowSet;
+
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+
 public class Game {
 
     private int gameId;
@@ -35,5 +40,29 @@ public class Game {
     public String toString() {
         return "Game [gameId=" + gameId + ", name=" + name + ", year=" + year + ", ranking=" + ranking + ", usersRated="
                 + usersRated + ", url=" + url + ", image=" + image + "]";
+    }
+
+    public JsonObject toJson() {
+        return Json.createObjectBuilder()
+            .add("gameId", gameId)
+            .add("name", name)
+            .add("year", year)
+            .add("ranking", ranking)
+            .add("usersRated", usersRated)
+            .add("url", url)
+            .add("image", image)
+            .build();
+    }
+
+    public static Game create(SqlRowSet rs) {
+        Game game = new Game();
+        game.setGameId(rs.getInt("gid"));
+        game.setName(rs.getString("name"));
+        game.setYear(rs.getInt("year"));
+        game.setRanking(rs.getInt("ranking"));
+        game.setUsersRated(rs.getInt("users_rated"));
+        game.setUrl(rs.getString("url"));
+        game.setImage(rs.getString("image"));
+        return game;
     }
 }
