@@ -1,5 +1,10 @@
 package vttp2022.csf.day36.server.models;
 
+import org.springframework.jdbc.support.rowset.SqlRowSet;
+
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+
 public class Book {
 
     private String bookId;
@@ -22,5 +27,30 @@ public class Book {
     @Override
     public String toString() {
         return "Book[bookId=%s, title=%s]".formatted(bookId, title);
+    }
+
+    public JsonObject toBookSummary() {
+        return Json.createObjectBuilder()
+            .add("bookId", bookId)
+            .add("title", title)
+            .build();
+    }
+
+    public JsonObject toBook() {
+        return Json.createObjectBuilder()
+            .add("bookId", bookId)
+            .add("title", title)
+            .add("authors", authors)
+            .add("description", description)
+            .build();
+    }
+
+    public static Book create(SqlRowSet rs) {
+        Book book = new Book();
+        book.setBookId(rs.getString("book_id"));
+        book.setTitle(rs.getString("title"));
+        book.setAuthors(rs.getString("authors"));
+        book.setDescription(rs.getString("description"));
+        return book;
     }
 }
