@@ -1,0 +1,32 @@
+<h1>My first SPA</h1>
+
+<div class="box">
+
+  <a [routerLink]="['/']">Home</a>
+  <a [routerLink]="['/dogs']">Dogs</a>
+  <button type="button" [routerLink]="['/polar-bear']">Polar Bear</button>
+
+</div>
+
+<div class="box">
+  <form [formGroup]="form" (ngSubmit)="add()">
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td>
+          <input type="text" size="30" formControlName="name">
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Add</button></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<div class="box">
+
+  <router-outlet></router-outlet>
+
+</div>
