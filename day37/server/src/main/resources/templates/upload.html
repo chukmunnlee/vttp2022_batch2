@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h2>Name: <span data-th-text="${name}"></span></h2>
+        <h2>Filename: <span data-th-text="${file.originalFilename}"></span></h2>
+        <h2>Content type: <span data-th-text="${file.contentType}"></span></h2>
+        <h2>Size: <span data-th-text="${file.size}"></span></h2>
+
+        <div>
+            <img data-th-src="|https://bigbucket.sgp1.digitaloceanspaces.com/${key}|" alt="">
+        </div>
+        
+    </body>
+</html>
