@@ -1,6 +1,11 @@
 export interface Task {
-	id: string
+	id: number
+  taskId?: string
 	task: string
 	priority: number
-	dueDate: string
+	dueDate: number
+}
+
+export interface SyncResult {
+  insertCount: number
 }

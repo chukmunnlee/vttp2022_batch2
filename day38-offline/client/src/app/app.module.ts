@@ -6,6 +6,7 @@ import { HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
+import { TaskRepository } from './task.repository';
 
 const appRoutes: Routes = [
 ]
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
     BrowserModule, RouterModule.forRoot(appRoutes),
 	  ReactiveFormsModule, HttpClientModule
   ],
-  providers: [],
+  providers: [ TaskRepository ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

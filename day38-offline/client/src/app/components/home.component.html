@@ -28,3 +28,21 @@
 		</tr>
 	</table>
 </form>
+
+<table border="1" *ngIf="tasks.length > 0">
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Priority</th>
+      <th>Due Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let t of tasks">
+      <td>{{ t.task }}</td>
+      <td>{{ t.priority }}</td>
+      <td>{{ t.dueDate | date }}</td>
+    </tr>
+
+  </tbody>
+</table>
