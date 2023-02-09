@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="addContact()">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" size="30" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>
+        <input type="email" size="30" formControlName="email">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button type="submit">Add</button></td>
+    </tr>
+  </table>
+</form>
+
+<h3><a [routerLink]="['/']">Back</a></h3>
+
+<div>
+  <ul>
+    <li *ngFor="let c of contacts">
+      {{ c.name }} - {{ c.email }}
+    </li>
+  </ul>
+</div>

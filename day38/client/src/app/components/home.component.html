@@ -1,0 +1,15 @@
+<h2>Please Login</h2>
+
+<form [formGroup]="form" (ngSubmit)="login()">
+  <table>
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button type="submit">Login</button></td>
+    </tr>
+  </table>
+
+</form>
