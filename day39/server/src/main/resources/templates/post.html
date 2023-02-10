@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Post</title>
+	</head>
+	<body>
+
+		<h1>Your Post</h1>
+		<h4>By <span data-th-text="${post.name}"></span></h4>
+		<h4>Date <span data-th-text="${post.postDate}"></span></h4>
+
+		<h2 data-th-text="${post.title}"></h2>
+
+		<p data-th-text="${post.text}"></p>
+
+		<div>
+			<img data-th-src="${post.imageUrl}" width="300">
+		</div>
+
+		<div>
+			<form>
+				<button type="submit" 
+					data-th-formmethod="POST"
+					data-th-formaction="@{/post/{postId}/like(postId=${post.postId})}">
+						Like <span data-th-text="${post.like}"></span>
+				</button>
+				<button type="submit" 
+					data-th-formmethod="POST"
+					data-th-formaction="@{/post/{postId}/dislike(postId=${post.postId})}">
+						Dislike <span data-th-text="${post.dislike}"></span>
+				</button>
+			</form>
+		</div>
+		
+	</body>
+</html>
