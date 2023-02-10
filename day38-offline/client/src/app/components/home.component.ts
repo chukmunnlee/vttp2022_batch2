@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
 
 	processTask() {
 		const task = this.form.value as Task
+    console.info('>>>> task: ', task)
 		task.dueDate = new Date(this.form.get('dueDate')?.value).getTime()
     this.taskRepo.addTodo(task)
       .then(result => {
@@ -27,6 +28,13 @@ export class HomeComponent implements OnInit {
         return this.taskRepo.getTodos()
       })
 	}
+
+  invalid() {
+    const d = new Date()
+    const now = new Date(`${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`).getTime()
+    const dueDate = (new Date(this.form.get('dueDate')?.value)).getTime()
+    return this.form.invalid || (dueDate < now)
+  }
 
 	private createForm(): FormGroup {
 		return this.fb.group({
