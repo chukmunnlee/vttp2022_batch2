@@ -12,16 +12,10 @@ export class HomeComponent implements OnInit {
 
 	form!: FormGroup
 
-  tasks: Task[] = []
-
 	constructor(private fb: FormBuilder, private taskRepo: TaskRepository) { }
 
 	ngOnInit(): void {
 		this.form = this.createForm()
-    this.taskRepo.getTodos()
-      .then(result => {
-        this.tasks = result
-      })
 	}
 
 	processTask() {
@@ -31,9 +25,6 @@ export class HomeComponent implements OnInit {
       .then(result => {
         this.ngOnInit()
         return this.taskRepo.getTodos()
-      })
-      .then(result => {
-        this.tasks = result
       })
 	}
 
