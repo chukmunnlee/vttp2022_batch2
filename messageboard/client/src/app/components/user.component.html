@@ -1,0 +1,26 @@
+<h2>Chat Service</h2>
+
+<form [formGroup]="form" (ngSubmit)="send()">
+	<table>
+		<tr>
+			<td>Name: </td>
+			<td>
+				<input type="text" size="30" placeholder="Your name, required" formControlName="name">
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<textarea cols="30" rows="5" formControlName="message"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button type="submit" [disabled]="form.invalid">Send</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<button type="button" [routerLink]="[ '/' ]">Back</button>
