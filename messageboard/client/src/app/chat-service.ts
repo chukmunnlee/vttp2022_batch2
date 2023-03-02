@@ -5,7 +5,8 @@ import  * as SockJS from "sockjs-client";
 import * as Stomp from 'stompjs'
 import {ChatMessage} from "./models";
 
-const WS_ENDPOINT = "http://localhost:8080/ws"
+//const WS_ENDPOINT = "http://localhost:8080/ws"
+const WS_ENDPOINT = "/ws"
 
 @Injectable()
 export class ChatService {
