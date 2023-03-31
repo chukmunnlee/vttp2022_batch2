@@ -11,8 +11,8 @@ services:
     image: chukmunnlee/goodreads-db:v1
 
     build:
-      context: .
-      dockerfile: Dockerfile.db
+      context: ./database
+      dockerfile: Dockerfile
 
     networks:
     - mynet
@@ -24,7 +24,7 @@ services:
 
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
 
     networks:
     - mynet
