@@ -1,0 +1,7 @@
+<h2>Books</h2>
+
+<div *ngFor="let b of books" class="book"
+  [routerLink]="[ '/book', b.bookId ]" >
+  <h4>{{ b.title }}</h4>
+</div>
+

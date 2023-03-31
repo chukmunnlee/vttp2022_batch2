@@ -1,0 +1,36 @@
+version: '3.9'
+
+networks:
+  mynet:
+
+volumes:
+  data-vol:
+
+services:
+  grdb:
+    image: chukmunnlee/goodreads-db:v1
+
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+
+    networks:
+    - mynet
+    volumes:
+    - data-vol:/var/lib/mysql
+
+  grapp:
+    image: chukmunnlee/goodreads:v1
+
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    networks:
+    - mynet
+
+    environment:
+    - SPRING_DATASOURCE_URL=jdbc:mysql://grdb:3306/goodreads 
+    ports:
+    - 8080:8080
+

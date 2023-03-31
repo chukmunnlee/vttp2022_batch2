@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dov Bear</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<div class="center-it">
+			<h1><code data-th-text="|${instanceName} ${instanceHash}|"></code></h1>
+		</div>
+
+		<div class="center-it" data-th-each="url: ${dovs}">
+			<img data-th-src="@{${url}}">
+		</div>
+
+	</body>
+</html>
