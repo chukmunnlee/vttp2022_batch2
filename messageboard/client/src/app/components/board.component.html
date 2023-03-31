@@ -1,0 +1,20 @@
+<h2>Messageboard</h2>
+
+<table>
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Sender</th>
+			<th>Message</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let m of messages">
+			<td> <i>{{ m.date }}</i> </td>
+			<td> <code>{{ m.sender }}</code> </td>
+			<td> <p>{{ m.message }}</p> </td>
+		</tr>
+	</tbody>
+</table>
+
+<button type="button" [routerLink]="[ '/' ]">Back</button>

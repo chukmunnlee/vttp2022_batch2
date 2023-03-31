@@ -5,6 +5,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +14,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
 import vttp2022.csf.day39.server.models.Post;
 import vttp2022.csf.day39.server.services.PostService;
 
@@ -25,6 +30,28 @@ public class PostController {
 
 	@Autowired
 	private PostService postSvc;
+
+	@PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseBody
+	public ResponseEntity<String> postPostJson(@RequestPart MultipartFile image,
+			@RequestPart String email, @RequestPart String title, @RequestPart String text) {
+
+		Post post = new Post();
+		post.setEmail(email);
+		post.setTitle(title);
+		post.setText(text);
+
+		Optional<String> opt = postSvc.createPost(post, image);
+		String postId = opt.get();
+
+		logger.log(Level.INFO, "New postId: %s".formatted(postId));
+
+		JsonObject response = Json.createObjectBuilder()
+			.add("postId", postId)
+			.build();
+
+		return ResponseEntity.ok(response.toString());
+	}
 
 	@PostMapping
 	public String postPost(@RequestPart MultipartFile image,
